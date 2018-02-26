@@ -37,11 +37,17 @@ def run(gen):
         info = GetInfo(userIndex)
         infom = info.getinfo()
         print("[+] 正在尝试",userIndex)
+        #print(infom)
         if "获取用户信息失败" not in infom:
             print("[+] 获取用户信息成功")
-            with open(os.path.dirname(__file__)+"\\Success.txt","w") as file:
-                file.write(infom)
+            print(infom)
+            with open("Success.txt","a",encoding="utf-8") as file:
+                file.write(infom+"\n")
         time.sleep(random.random())
+
+def test(userIndex):
+    info = GetInfo(userIndex)
+    print(info.getinfo())
 
 if __name__ == '__main__':
     """
@@ -52,9 +58,9 @@ if __name__ == '__main__':
     threadNum = 20
     # 接入方式标识符
     #ident = "02e342e31365f353132303" #PC+网线直连
-    #ident = "62e3230302e3138335f353132303" #PC+WIFI
+    ident = "62e3230302e3138335f353132303" #PC+WIFI
+    #ident = "62e35322e3233355f353132303" #安卓+WIFI
     #ident = "62e3133362e385f353132303"   #苹果+WIFI
-    ident = "62e35322e3233355f353132303" #安卓+WIFI
 
     """
         =====================设置区结束==========================
