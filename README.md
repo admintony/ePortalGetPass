@@ -1,6 +1,6 @@
 # ePortalGetPass
 
-漏洞地址：http://47.95.206.199/?p=533
+漏洞地址：http://admintony.com/校园网认证系统-RG-SAM-Portal组件-用户信息泄露漏洞.html
 
 用法：
   在设置区设置线程数量及需要爆破的接入方式标识符
